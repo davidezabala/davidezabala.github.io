@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: "poppins";
+}
+
+body{
+    width: 100%;
+    color: #4E4E4E;
+    background-color: #B4BDBE;
+    overflow-x:hidden;
+    position: relative; 
+}
+
+.header{
+    background-color:#52C1Cc;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+}
+
+.titulo{
+    line-height: 80px;
+    font-size: 2rem;
+    text-transform:uppercase;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo__img{
+    height: 80px;
+    padding: 0 40px;
+}
+
+.nav__menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav__menu__item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+
+}
+
+.nav__menu__link{
+    color:white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav__menu__link:hover{
+    background-color: blue;
+    transition: 0,5s;
+}
+
+
+.img{
+    height: 325px;
+}
+
+.contenedor{
+    width: 80%;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parrafo{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.descripcion{
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.slider{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0%;
+    width: 800%;
+    animation: cambio 60s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    10%{margin-left: 0;}
+
+    12.5%{margin-left: -100%;}
+    22.5%{margin-left: -100%;}
+
+    25%{margin-left: -200%;}
+    35%{margin-left: -200%;}
+
+    37.5%{margin-left: -300%;}
+    47.5%{margin-left: -300%;}
+
+    50%{margin-left: -400%;}
+    60%{margin-left: -400%;}
+
+    62.5%{margin-left: -500%;}
+    72.5%{margin-left: -500%;}
+
+    75%{margin-left: -600%;}
+    85%{margin-left: -600%;}
+
+    87.5%{margin-left: -700%;}
+    100%{margin-left: -700%;}
+
+}
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+}
+
+.div__contacto{
+    display: flex;
+    height: 80px;
+    background-color:#52C1Cc;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+
+.div__link{
+    padding: 15px;
+}
+.div__link:hover{
+    background-color: blue;
+    transition: 0,5s;
+}
+
+.div__icon{
+    width: 24px;
+    height: 24px;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border:none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+ 
+@media (max-width: 768px){
+    
+    body{
+        padding-top: 70px;   
+        
+    }
+    
+    .header{
+        height: 60px;
+    }
+
+    .logo__img{
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    .nav__menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: grey;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding:20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left:100%;
+        transition:left 0.5s;
+    }
+
+    .nav__menu__item{
+        line-height: 70px;
+        text-transform: uppercase;
+    }
+
+    .nav__menu__link:hover{
+        background:none;
+        color: #52C1Cc;
+
+    }
+
+    .img{
+        width: 100%;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav__menu_visible{
+        left:0;
+    }
+     
+    .contenedor{
+        width: 80%;
+        margin-top: 35px;
+        margin-bottom: 85px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .slider{
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .footer{
+        height: 60px;
+    }
+
+}
