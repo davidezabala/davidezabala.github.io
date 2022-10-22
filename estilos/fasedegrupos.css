@@ -311,6 +311,10 @@ p{
     .contenedor{
         width: 100%;
     }
+    
+        h1{
+        margin-bottom: 15px;
+    }
 
     .bandera{
         width: 26px;
