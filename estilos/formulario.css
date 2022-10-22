@@ -47,3 +47,10 @@ textarea{
 #boton:hover{
     cursor: pointer;
 }
+
+@media (max-width: 412px){
+
+    form{
+        width: 100%;
+    }
+}
